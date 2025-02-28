@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded and parsed");
     let contentDiv = document.getElementById('content');
     let loadingDiv = document.getElementById('loading');
     let page = 1;
 
     function generateRandomContent() {
+        console.log("Generating random content");
         // Generate random text content
         let text = '';
         let possibleCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function loadMoreContent() {
+        console.log("Loading more content");
         for (let i = 0; i < 10; i++) {
             generateRandomContent();
         }
